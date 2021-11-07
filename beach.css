@@ -48,52 +48,122 @@ table {
 }
 
 body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#Beach{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
     background-image: url("https://traversymedia.com/downloads/assets/beachshowcase.jpg");
-    background-repeat: round; 
+    background-repeat: round;
 }
 
-h1{
-    color: #5E2726ff;
-    font-size: 42px;
-    letter-spacing: 0.5px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 1px 0;
-    text-align: center;
-    position: relative;
-    bottom: 60px;
+h1 {
+    color:#5E2726ff;
+    font-size:2.9em;
+    padding: 10px 0px;
 }
 
-.lorem {
-    color: #5E2726ff;
-    font-size: 20px;
-    padding: 9px 0;
-    position: relative;
-    bottom: 55px;
-}
-
-.more{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(380px, 6px);
-    border-radius: 10px;
-    padding: 10px;
-    background: none;
-    border-color:#5E2726ff;
-    color: #5E2726ff;
+#Beach p{
+    color:#5E2726ff;
+    padding: 5px 0px;
     font-size:1em;
-    transition: background-color 200ms ease-in-out;
-    position: relative;
-    bottom: 40px;
-    border-width: 1px;
 }
 
-.more:hover{
+.button{
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: none;
+    text-decoration: none;
+    color:#5E2726ff;
+    border-color: #5E2726ff;
+    position: relative;
+    top: 15px;
+    transition: background-color 199ms;
+}
+
+.button:hover, button:focus{
     background-color: #5E2726ff;
-    color:white;
-    cursor: pointer;
+    color: white;
+    transform: translateY(-5px);
+}
+
+#section-a{
+    background-color: #7f5539;
+    padding:20px 0;
+    color: white;
+}
+
+#section-a p{
+    text-align: center;
+    transform: scale(0.96);
+}
+
+#section-b{
+    padding:20px 0;
+}
+
+#section-b p{
+    text-align: center;
+    transform: scale(0.96);
+    color: #5E2726ff;
+}
+
+#section-c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lorem1{
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    text-align: center;
+    margin-right: 50px;
+    padding: 30px 0;
+    transform: scale(1);
+    background-color: #7f5539;
+    color: white;
+    line-height: 20px;
+}
+
+.lorem2{
+    color: #5E2726ff;
+    text-align: left;
+    margin-left: -5px;
+    line-height: 20px;
+    margin-left: -25px;
+    padding: 30px 0px;
+}
+
+.lorem3{
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    text-align: center;
+    margin-left: 5px;
+    padding: 30px 0;
+    transform: scale(1);
+    background-color: #7f5539;
+    color: white;
+    line-height: 20px;
+}
+
+@media (max-width: 900px){
+    .heading{
+       font-size: 4em;
+       text-align: center;
+       flex: column;
+    }
+
+    .paragraph{
+        font-size: 2em;
+        text-align: center;
+        flex-direction: colum;
+    }
 }
